@@ -3,7 +3,6 @@ let addText = document.querySelector('#addQuoteText');
 let addAuthor = document.querySelector('#addQuoteAuthor');
 let saveBtn = document.querySelector('.saveQuote-btn');
 let clearBtn = document.querySelector('.button-clear');
-let backBtn = document.querySelector('.button-back');
 let er = document.querySelector('.error');
 let linkLogo = document.querySelectorAll('.logo a');
 
@@ -75,9 +74,5 @@ function createList() {
 clearBtn.addEventListener('click', () => {
     localStorage.clear();
     list.innerHTML = '';
-})
-// кнопка возврата на главную страницу
-backBtn.addEventListener('click', () => {
-    window.location.href = '../index.html';
 })
 
