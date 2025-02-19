@@ -1,0 +1,57 @@
+.logo:hover {
+    transform: none;
+}
+.editQuote {
+    margin-top: 3vw;
+    & textarea{
+        width: 100%;
+    }
+}
+#addQuoteText{
+    height: 10vw;
+}
+#addQuoteAuthor{
+    height: 2rem;
+}
+.error {
+    color: red;
+    font-size: 2rem;
+}
+.container {
+    display: flex;
+    margin-top: 4vw;
+    gap: 3vw;
+    justify-content: space-between;  
+    border-left: 2px solid black; 
+    padding-left: 1vw;
+}
+.saveQuote {
+    font-size: 1.5rem;
+    width: 50vw;
+}
+.saveQuote-list__item {
+    margin-bottom: 2vw;
+    & hr{
+        margin-top: 1vw;
+    }
+}
+.saveQuote-list__item-author {
+    font-size: 1rem;
+}
+.button {
+    margin-top: 1vw;
+    & button{
+        height: 2rem;
+        width: 49%;
+        padding: 0px;
+        &:hover{
+            letter-spacing: -0.5px;    
+        }
+    }
+  }
+.image-block{
+    align-content: end;
+    & img{
+    max-width: 30vw;
+    }
+}

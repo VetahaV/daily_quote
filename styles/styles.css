@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+body{
+    margin: 0 10vw;
+    padding: 0 1vw;
+    border-left: 2px solid black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    width: 10rem;
+    padding: 0.15rem ;
+    border-radius: 0.3rem;
+    border: 1px solid grey;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0.2rem 0.2rem 0.1rem grey;
+    transition: 0.3s;
+    &:hover{
+        background-color: #fffdfd;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    &:focus{
+        box-shadow: 0px 0px 0px white;
+        transform: translate(0.2rem, 0.2rem)
+    }
+}
+button:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 200px;
+    margin-left: 60px;
+    background: #fffdfd;
+    opacity: 0.5;
+    position: absolute;
+    left: -40px;
+    top: -100px;
+    z-index: 1;
+    transform: rotate(45deg);
+    transition: all 1s;
+    animation-name: slideme;
+    animation-duration: 5s;
+    animation-delay: 0.01s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes slideme {
+    0% {
+    left: -30px;
+    margin-left: 0px;
+    }
+    30% {
+    left: 110%;
+    margin-left: 80px;
+    }
+    100% {
+    left: 110%;
+    margin-left: 80px;
+    }
+}
+textarea{
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+header{
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    display: flex;
+    align-items: end;
+    gap: 5vw;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.logo{
+    width: 8vw;
+    height:5vw;    
+    background-image: url('../images/favicons/fav.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    a{
+        display: block;
+        width: inherit;
+        height: inherit;
+    }
+    &:hover{
+        cursor: pointer;
+        transition: 0.5s;
+        transform: scale(1.2);
+    }
+}
+@media (width < 920px){
+    header{
+        text-align: left;
+    }
+    .logo{
+        width: 100%;
+    }
+} 
+
+.quote{
+    border-left: 2px solid black;
+    padding-left: 2vw;
+    margin-top: 2rem;
+    min-height: 20vh;
+    & img{
+        width: 30vw;
+        min-height: 20vh;
+        float: right;
+    }
+}
+.quote__txt{
+    font-weight:lighter;
+    font-family: cursive;
+    font-size:xx-large;
+}
+.quote__author{
+    margin-top: 1rem;
+    font-size: larger;
+    border: none;
+}
+
+.admin-block{
+    margin-top: 2rem;
+    label{
+        font-style: italic;
+        input{
+            border: none;
+            border-bottom: 1px solid black;
+        }
+    }
+}
+
+footer{
+    padding-left: 2vw;
+    font-size: smaller;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    div{
+        display: flex;
+        gap: 1rem;
+        p{
+            width: max-content;
+        }
+    }
+    .logo{
+        height: 1rem;
+    }
+}
