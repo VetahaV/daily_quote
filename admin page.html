@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Новая цитата каждый день. Цитаты мудрых. Мудрость на каждый день" />
+    <title>Ежедневная цитата</title>
+    <link rel="shortcut icon" href="./images/favicons/fav.jpg" type="image/x-icon"> 
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/adminStyles.css">
+</head>
+<body>
+    <header>
+        <h1>Ежедневная цитата</h1>
+        <div class = "logo">
+            <a href="./password page.html"></a>
+        </div>
+    </header>
+    <main>
+        <div class="editQuote">
+            <textarea placeholder="введите новую цитату:" id="addQuoteText"></textarea>
+            <br/>
+            <textarea placeholder="введите автора цитаты:"id="addQuoteAuthor"></textarea>
+            <br/>
+            <p class="error"><br/></p>
+            <button class="saveQuote-btn">сохранить цитату</button>
+        </div>           
+        <div class="container">
+            <div class="list-block">
+                <div class="saveQuote">
+                    <ul class="saveQuote-list"></ul>
+                </div>
+            </div>
+            <div class="image-block">
+                <img src="./images/note.jpg"/>
+            </div>
+        </div>
+        <div class="button">
+            <button class="button-back">вернуться на главную страницу</button>
+            <button class="button-clear">очистить список</button>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>2025</p>
+            <p>сайт разработал: <i>Виталий В</i></p>
+        </div>
+        <div class = "logo">
+            <a href="./password page.html"></a>
+        </div>
+    </footer>
+    <script src="./script/scriptAdmin.js"></script>
+</body>
+</html>
